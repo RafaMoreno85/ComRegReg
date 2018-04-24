@@ -1,0 +1,41 @@
+//Catodo
+	NET "Catodo<0>" LOC = "M12";
+	NET "Catodo<1>" LOC = "L13";
+	NET "Catodo<2>" LOC = "P12";
+	NET "Catodo<3>" LOC = "N11";
+	NET "Catodo<4>" LOC = "N14";
+	NET "Catodo<5>" LOC = "H12";
+	NET "Catodo<6>" LOC = "L14";
+
+// Anodo
+	NET "Anodo<0>" LOC = "F12";
+	NET "Anodo<1>" LOC = "J12";
+	NET "Anodo<2>" LOC = "M13";
+	NET "Anodo<3>" LOC = "K14";
+	
+// Reloj
+	NET "CLK"		LOC = "B8";		
+	
+// Pulsadores
+	NET "Reset"		LOC = "C11"; 		//Reset en BTN1
+	NET "Push"		LOC = "G12";		//Push en BTN0
+	
+// Leds Externos
+	//Bandera de resultado cero en la ALU
+	NET "LedFZ"				LOC = "D12";	
+
+	//Campo 1 del registro de instrucciones
+	NET "LedsExternos<2>"	LOC = "B5";		
+	NET "LedsExternos<1>"	LOC = "B7";		
+	NET "LedsExternos<0>"	LOC = "C9";		
+	
+// Leds incorporados a la placa
+	//Campo 2 del registro de instrucciones
+	NET "LedsInternos<6>" LOC = "G1";		
+	NET "LedsInternos<5>" LOC = "P4";		
+	NET "LedsInternos<4>" LOC = "N4";		
+	NET "LedsInternos<3>" LOC = "N5";		
+	//Campo 3 del registro de instrucciones
+	NET "LedsInternos<2>" LOC = "P7";		
+	NET "LedsInternos<1>" LOC = "M11";	
+	NET "LedsInternos<0>" LOC = "M5";		

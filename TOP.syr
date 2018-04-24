@@ -1,0 +1,790 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "H:/Examen TDC/CompRegReg/RisingEdge.vhd" in Library work.
+Architecture behavioral of Entity risingedge is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Mux4_4bits.vhd" in Library work.
+Architecture behavioral of Entity mux4_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Disp7Seg.vhd" in Library work.
+Architecture behavioral of Entity disp7seg is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/YourTurn.vhd" in Library work.
+Architecture structural of Entity yourturn is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/CLK_1KHz.vhd" in Library work.
+Architecture behavioral of Entity clk_1khz is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Mux2_4bits.vhd" in Library work.
+Architecture behavioral of Entity mux2_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/RAM_16x10.vhd" in Library work.
+Architecture behavioral of Entity ram_16x10 is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Reg_10bits.vhd" in Library work.
+Architecture behavioral of Entity reg_10bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Inc1_3bits.vhd" in Library work.
+Architecture behavioral of Entity inc1_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Reg_4bits.vhd" in Library work.
+Architecture behavioral of Entity reg_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/ALU_4bits.vhd" in Library work.
+Architecture behavioral of Entity alu_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/FFD_FZ.vhd" in Library work.
+Architecture behavioral of Entity ffd_basic is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Banco_Registros_8x4.vhd" in Library work.
+Architecture behavioral of Entity banco_registros_8x4 is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/DeBounceFSM.vhd" in Library work.
+Architecture behavioral of Entity deboucefsm is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Timer300ms.vhd" in Library work.
+Architecture behavioral of Entity timerend300ms is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Control_unit.vhd" in Library work.
+Architecture behavioral of Entity control_unit is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Debounce.vhd" in Library work.
+Architecture structural of Entity debounce is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Data_Path.vhd" in Library work.
+Architecture structural of Entity data_path is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Display7Seg_4ON.vhd" in Library work.
+Architecture structural of Entity display7seg_4on is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/TOP.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOP> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Debounce> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Data_Path> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Display7Seg_4ON> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <DebouceFSM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TimerEnd300ms> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux2_4bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RAM_16x10> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg_10bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Inc1_4bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg_4bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU_4bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FFD_Basic> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Banco_registros_8x4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux4_4bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Disp7Seg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <YourTurn> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <CLK_1KHz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RisingEdge> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TOP> in library <work> (Architecture <structural>).
+Entity <TOP> analyzed. Unit <TOP> generated.
+
+Analyzing Entity <Control_unit> in library <work> (Architecture <behavioral>).
+Entity <Control_unit> analyzed. Unit <Control_unit> generated.
+
+Analyzing Entity <Debounce> in library <work> (Architecture <structural>).
+Entity <Debounce> analyzed. Unit <Debounce> generated.
+
+Analyzing Entity <DebouceFSM> in library <work> (Architecture <behavioral>).
+Entity <DebouceFSM> analyzed. Unit <DebouceFSM> generated.
+
+Analyzing Entity <TimerEnd300ms> in library <work> (Architecture <behavioral>).
+Entity <TimerEnd300ms> analyzed. Unit <TimerEnd300ms> generated.
+
+Analyzing Entity <Data_Path> in library <work> (Architecture <structural>).
+Entity <Data_Path> analyzed. Unit <Data_Path> generated.
+
+Analyzing Entity <Mux2_4bits> in library <work> (Architecture <behavioral>).
+Entity <Mux2_4bits> analyzed. Unit <Mux2_4bits> generated.
+
+Analyzing Entity <RAM_16x10> in library <work> (Architecture <behavioral>).
+Entity <RAM_16x10> analyzed. Unit <RAM_16x10> generated.
+
+Analyzing Entity <Reg_10bits> in library <work> (Architecture <behavioral>).
+Entity <Reg_10bits> analyzed. Unit <Reg_10bits> generated.
+
+Analyzing Entity <Inc1_4bits> in library <work> (Architecture <behavioral>).
+Entity <Inc1_4bits> analyzed. Unit <Inc1_4bits> generated.
+
+Analyzing Entity <Reg_4bits> in library <work> (Architecture <behavioral>).
+Entity <Reg_4bits> analyzed. Unit <Reg_4bits> generated.
+
+Analyzing Entity <ALU_4bits> in library <work> (Architecture <behavioral>).
+Entity <ALU_4bits> analyzed. Unit <ALU_4bits> generated.
+
+Analyzing Entity <FFD_Basic> in library <work> (Architecture <behavioral>).
+Entity <FFD_Basic> analyzed. Unit <FFD_Basic> generated.
+
+Analyzing Entity <Banco_registros_8x4> in library <work> (Architecture <behavioral>).
+Entity <Banco_registros_8x4> analyzed. Unit <Banco_registros_8x4> generated.
+
+Analyzing Entity <Display7Seg_4ON> in library <work> (Architecture <structural>).
+Entity <Display7Seg_4ON> analyzed. Unit <Display7Seg_4ON> generated.
+
+Analyzing Entity <Mux4_4bits> in library <work> (Architecture <behavioral>).
+Entity <Mux4_4bits> analyzed. Unit <Mux4_4bits> generated.
+
+Analyzing Entity <Disp7Seg> in library <work> (Architecture <behavioral>).
+Entity <Disp7Seg> analyzed. Unit <Disp7Seg> generated.
+
+Analyzing Entity <YourTurn> in library <work> (Architecture <structural>).
+Entity <YourTurn> analyzed. Unit <YourTurn> generated.
+
+Analyzing Entity <RisingEdge> in library <work> (Architecture <behavioral>).
+Entity <RisingEdge> analyzed. Unit <RisingEdge> generated.
+
+Analyzing Entity <CLK_1KHz> in library <work> (Architecture <behavioral>).
+Entity <CLK_1KHz> analyzed. Unit <CLK_1KHz> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Control_unit>.
+    Related source file is "H:/Examen TDC/CompRegReg/Control_unit.vhd".
+    Found finite state machine <FSM_0> for signal <Next_State>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 27                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 10                                             |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit register for signal <ControlWord>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  12 D-type flip-flop(s).
+Unit <Control_unit> synthesized.
+
+
+Synthesizing Unit <DebouceFSM>.
+    Related source file is "H:/Examen TDC/CompRegReg/DeBounceFSM.vhd".
+    Found finite state machine <FSM_1> for signal <Next_State>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | RESET                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | inic                                           |
+    | Power Up State     | inic                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <FilteredPush>.
+    Found 1-bit register for signal <EnableTimer>.
+    Found 1-bit register for signal <Push_Sync>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 D-type flip-flop(s).
+Unit <DebouceFSM> synthesized.
+
+
+Synthesizing Unit <TimerEnd300ms>.
+    Related source file is "H:/Examen TDC/CompRegReg/Timer300ms.vhd".
+    Found 1-bit register for signal <End300ms>.
+    Found 24-bit up counter for signal <Counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <TimerEnd300ms> synthesized.
+
+
+Synthesizing Unit <Mux2_4bits>.
+    Related source file is "H:/Examen TDC/CompRegReg/Mux2_4bits.vhd".
+Unit <Mux2_4bits> synthesized.
+
+
+Synthesizing Unit <RAM_16x10>.
+    Related source file is "H:/Examen TDC/CompRegReg/RAM_16x10.vhd".
+WARNING:Xst:647 - Input <Reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x10-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 10-bit register for signal <DataOut>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  10 D-type flip-flop(s).
+Unit <RAM_16x10> synthesized.
+
+
+Synthesizing Unit <Reg_10bits>.
+    Related source file is "H:/Examen TDC/CompRegReg/Reg_10bits.vhd".
+    Found 10-bit register for signal <DataOut>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <Reg_10bits> synthesized.
+
+
+Synthesizing Unit <Inc1_4bits>.
+    Related source file is "H:/Examen TDC/CompRegReg/Inc1_3bits.vhd".
+    Found 4-bit adder for signal <Value_Inc$addsub0000> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Inc1_4bits> synthesized.
+
+
+Synthesizing Unit <Reg_4bits>.
+    Related source file is "H:/Examen TDC/CompRegReg/Reg_4bits.vhd".
+    Found 4-bit register for signal <DataOut>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Reg_4bits> synthesized.
+
+
+Synthesizing Unit <ALU_4bits>.
+    Related source file is "H:/Examen TDC/CompRegReg/ALU_4bits.vhd".
+    Found 4-bit addsub for signal <resAlu$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ALU_4bits> synthesized.
+
+
+Synthesizing Unit <FFD_Basic>.
+    Related source file is "H:/Examen TDC/CompRegReg/FFD_FZ.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FFD_Basic> synthesized.
+
+
+Synthesizing Unit <Banco_registros_8x4>.
+    Related source file is "H:/Examen TDC/CompRegReg/Banco_Registros_8x4.vhd".
+    Found 4-bit register for signal <DataOut_reg1>.
+    Found 4-bit register for signal <DataOut_reg2>.
+    Found 4-bit 8-to-1 multiplexer for signal <$varindex0000> created at line 65.
+    Found 4-bit 8-to-1 multiplexer for signal <$varindex0001> created at line 70.
+    Found 32-bit register for signal <bReg>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <Banco_registros_8x4> synthesized.
+
+
+Synthesizing Unit <Mux4_4bits>.
+    Related source file is "H:/Examen TDC/CompRegReg/Mux4_4bits.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <Salida>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Mux4_4bits> synthesized.
+
+
+Synthesizing Unit <Disp7Seg>.
+    Related source file is "H:/Examen TDC/CompRegReg/Disp7Seg.vhd".
+    Found 4x4-bit ROM for signal <Anode>.
+    Found 16x7-bit ROM for signal <Seg>.
+    Summary:
+	inferred   2 ROM(s).
+Unit <Disp7Seg> synthesized.
+
+
+Synthesizing Unit <CLK_1KHz>.
+    Related source file is "H:/Examen TDC/CompRegReg/CLK_1KHz.vhd".
+    Found 1-bit register for signal <Out_1KHz>.
+    Found 16-bit up counter for signal <Count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <CLK_1KHz> synthesized.
+
+
+Synthesizing Unit <RisingEdge>.
+    Related source file is "H:/Examen TDC/CompRegReg/RisingEdge.vhd".
+    Found 1-bit register for signal <PreviousPush>.
+    Found 1-bit register for signal <RegisteredPush>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <RisingEdge> synthesized.
+
+
+Synthesizing Unit <Debounce>.
+    Related source file is "H:/Examen TDC/CompRegReg/Debounce.vhd".
+Unit <Debounce> synthesized.
+
+
+Synthesizing Unit <Data_Path>.
+    Related source file is "H:/Examen TDC/CompRegReg/Data_Path.vhd".
+Unit <Data_Path> synthesized.
+
+
+Synthesizing Unit <YourTurn>.
+    Related source file is "H:/Examen TDC/CompRegReg/YourTurn.vhd".
+    Found 2-bit up counter for signal <contador>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <YourTurn> synthesized.
+
+
+Synthesizing Unit <Display7Seg_4ON>.
+    Related source file is "H:/Examen TDC/CompRegReg/Display7Seg_4ON.vhd".
+Unit <Display7Seg_4ON> synthesized.
+
+
+Synthesizing Unit <TOP>.
+    Related source file is "H:/Examen TDC/CompRegReg/TOP.vhd".
+Unit <TOP> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x10-bit single-port RAM                             : 1
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 4-bit addsub                                          : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 22
+ 1-bit register                                        : 8
+ 10-bit register                                       : 2
+ 12-bit register                                       : 1
+ 4-bit register                                        : 11
+# Multiplexers                                         : 3
+ 4-bit 4-to-1 multiplexer                              : 1
+ 4-bit 8-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <Inst_Debounce/Inst_DebouceFSM/Next_State/FSM> on signal <Next_State[1:2]> with gray encoding.
+--------------------
+ State  | Encoding
+--------------------
+ inic   | 00
+ s0     | 01
+ s01    | 11
+ espera | 10
+--------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_Control_unit/Next_State/FSM> on signal <Next_State[1:4]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 0000
+ loadinst | 0001
+ deco     | 0011
+ load     | 0010
+ store    | 0110
+ aaddb    | 0111
+ asubb    | 0101
+ binca    | 0100
+ bdeca    | 1100
+ beq      | 1101
+----------------------
+
+Synthesizing (advanced) Unit <RAM_16x10>.
+INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <WE>            | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <DataIn>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RAM_16x10> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# RAMs                                                 : 1
+ 16x10-bit single-port distributed RAM                 : 1
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 4-bit addsub                                          : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+# Multiplexers                                         : 9
+ 1-bit 8-to-1 multiplexer                              : 8
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <Control_unit> ...
+
+Optimizing unit <RAM_16x10> ...
+
+Optimizing unit <Reg_10bits> ...
+
+Optimizing unit <ALU_4bits> ...
+
+Optimizing unit <Banco_registros_8x4> ...
+
+Optimizing unit <Data_Path> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 16.
+FlipFlop Inst_Data_Path/Inst_Reg_10bits/DataOut_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 133
+ Flip-Flops                                            : 133
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOP.ngr
+Top Level Output File Name         : TOP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 25
+
+Cell Usage :
+# BELS                             : 397
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 38
+#      LUT2                        : 58
+#      LUT3                        : 62
+#      LUT3_D                      : 1
+#      LUT4                        : 100
+#      LUT4_D                      : 3
+#      LUT4_L                      : 8
+#      MUXCY                       : 44
+#      MUXF5                       : 29
+#      MUXF6                       : 8
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 133
+#      FD                          : 4
+#      FDC                         : 38
+#      FDCE                        : 63
+#      FDE                         : 10
+#      FDPE                        : 12
+#      FDR                         : 6
+# RAMS                             : 10
+#      RAM16X1S                    : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 2
+#      OBUF                        : 22
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      160  out of    960    16%  
+ Number of Slice Flip Flops:            133  out of   1920     6%  
+ Number of 4 input LUTs:                284  out of   1920    14%  
+    Number used as logic:               274
+    Number used as RAMs:                 10
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of     83    30%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 143   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 113   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.571ns (Maximum Frequency: 116.671MHz)
+   Minimum input arrival time before clock: 4.046ns
+   Maximum output required time after clock: 12.303ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 8.571ns (frequency: 116.671MHz)
+  Total number of paths / destination ports: 7303 / 267
+-------------------------------------------------------------------------
+Delay:               8.571ns (Levels of Logic = 7)
+  Source:            Inst_Control_unit/ControlWord_10 (FF)
+  Destination:       Inst_Data_Path/Inst_RAM_16x10/DataOut_0 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Inst_Control_unit/ControlWord_10 to Inst_Data_Path/Inst_RAM_16x10/DataOut_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.514   1.101  Inst_Control_unit/ControlWord_10 (Inst_Control_unit/ControlWord_10)
+     LUT4_L:I2->LO         1   0.612   0.103  Inst_Data_Path/Inst_ALU_4bits/Maddsub_resAlu_addsub0000_lut<1>_SW0 (N42)
+     LUT4:I3->O            3   0.612   0.451  Inst_Data_Path/Inst_ALU_4bits/Maddsub_resAlu_addsub0000_lut<1> (Inst_Data_Path/Inst_ALU_4bits/Maddsub_resAlu_addsub0000_lut<1>)
+     MUXF5:S->O            2   0.641   0.383  Inst_Data_Path/Inst_ALU_4bits/resAlu<3>_SW0_SW0 (N32)
+     LUT4:I3->O            1   0.612   0.000  Inst_Data_Path/MUX2/Z<3>1_G (N77)
+     MUXF5:I1->O          21   0.278   0.959  Inst_Data_Path/MUX2/Z<3>1 (signal_busRam<3>)
+     RAM16X1S:A3->O        1   1.065   0.360  Inst_Data_Path/Inst_RAM_16x10/Mram_RAM3 (Inst_Data_Path/Inst_RAM_16x10/_varindex0000<2>)
+     LUT4:I3->O            1   0.612   0.000  Inst_Data_Path/Inst_RAM_16x10/DataOut_mux0001<2>1 (Inst_Data_Path/Inst_RAM_16x10/DataOut_mux0001<2>)
+     FD:D                      0.268          Inst_Data_Path/Inst_RAM_16x10/DataOut_2
+    ----------------------------------------
+    Total                      8.571ns (5.214ns logic, 3.357ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.046ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Inst_Debounce/Inst_DebouceFSM/EnableTimer (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to Inst_Debounce/Inst_DebouceFSM/EnableTimer
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           114   1.106   1.095  Reset_IBUF (Reset_IBUF)
+     INV:I->O             10   0.612   0.750  Inst_Debounce/Inst_DebouceFSM/RESET_inv1_INV_0 (Inst_Data_Path/Inst_Banco_registros_8x4/Reset_inv)
+     FDE:CE                    0.483          Inst_Data_Path/Inst_Banco_registros_8x4/DataOut_reg2_0
+    ----------------------------------------
+    Total                      4.046ns (2.201ns logic, 1.845ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2553 / 22
+-------------------------------------------------------------------------
+Offset:              12.303ns (Levels of Logic = 9)
+  Source:            Inst_Control_unit/ControlWord_10 (FF)
+  Destination:       Catodo<2> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Inst_Control_unit/ControlWord_10 to Catodo<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.514   1.101  Inst_Control_unit/ControlWord_10 (Inst_Control_unit/ControlWord_10)
+     LUT4_L:I2->LO         1   0.612   0.103  Inst_Data_Path/Inst_ALU_4bits/Maddsub_resAlu_addsub0000_lut<1>_SW0 (N42)
+     LUT4:I3->O            3   0.612   0.451  Inst_Data_Path/Inst_ALU_4bits/Maddsub_resAlu_addsub0000_lut<1> (Inst_Data_Path/Inst_ALU_4bits/Maddsub_resAlu_addsub0000_lut<1>)
+     MUXF5:S->O            2   0.641   0.383  Inst_Data_Path/Inst_ALU_4bits/resAlu<3>_SW0_SW0 (N32)
+     LUT4:I3->O            1   0.612   0.360  Inst_Data_Path/Inst_ALU_4bits/resAlu<3>_SW0 (N22)
+     LUT4_D:I3->O          3   0.612   0.520  Inst_Data_Path/Inst_ALU_4bits/resAlu<3> (signal_salALu<3>)
+     LUT3:I1->O            1   0.612   0.000  Inst_Display7Seg_4ON/Inst_Mux4_4bits/Mmux_Salida_43 (Inst_Display7Seg_4ON/Inst_Mux4_4bits/Mmux_Salida_43)
+     MUXF5:I0->O           7   0.278   0.754  Inst_Display7Seg_4ON/Inst_Mux4_4bits/Mmux_Salida_2_f5_2 (Inst_Display7Seg_4ON/output<3>)
+     LUT4:I0->O            1   0.612   0.357  Inst_Display7Seg_4ON/Inst_Disp7Seg/Mrom_Seg111 (Catodo_1_OBUF)
+     OBUF:I->O                 3.169          Catodo_1_OBUF (Catodo<1>)
+    ----------------------------------------
+    Total                     12.303ns (8.274ns logic, 4.029ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.39 secs
+ 
+--> 
+
+Total memory usage is 283264 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
