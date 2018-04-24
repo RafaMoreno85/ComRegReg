@@ -40,7 +40,14 @@ Creation of a computer with the following caracteristics:
 – 3o Field: Register2 address.
 
 
+State changes from control unit:
 
 ![alt text](https://github.com/RafaMoreno85/ComRegReg/blob/master/State_changes_from_CU.png)
+
+
+Module data path:
+
+
+![alt text](https://github.com/RafaMoreno85/ComRegReg/blob/master/Module_data_path.png)
 
 
