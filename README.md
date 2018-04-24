@@ -41,8 +41,6 @@ Creation of a computer with the following caracteristics:
 
 
 
-
-
-![alt text](https://raw.githubusercontent.com/RafaMoreno85/ComRegReg/blob/master/State_changes_from_CU.png)
+![alt text](https://github.com/RafaMoreno85/ComRegReg/blob/master/State_changes_from_CU.png)
 
 
