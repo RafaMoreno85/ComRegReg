@@ -27,5 +27,7 @@ Creation of a computer with the following caracteristics:
 • Instruction format:
 
 – 1o Field: Operation code (3bits).
+
 – 2o Field: Memory address (4bits) / Inmediate (4bits) / Register1 address (3bits).
+
 – 3o Field: Register2 address.
