@@ -38,3 +38,11 @@ Creation of a computer with the following caracteristics:
 – 2o Field: Memory address (4bits) / Inmediate (4bits) / Register1 address (3bits).
 
 – 3o Field: Register2 address.
+
+
+
+
+
+![alt text](https://raw.githubusercontent.com/RafaMoreno85/ComRegReg/blob/master/State_changes_from_CU.png)
+
+
