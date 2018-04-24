@@ -1,0 +1,2 @@
+ISim log file
+Running: H:\Examen TDC\CompRegReg\Control_unit_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb H:/Examen TDC/CompRegReg/Control_unit_tb_isim_beh.wdb 

@@ -47,16 +47,16 @@ architecture Behavioral of RAM_16x10 is
 				
 begin
 process (Clk, Reset)
-	Begin
+	Begin				-- Pendiente mirar el decremento.
 		--if (Reset = '1') then
 		--	RAM(0)  <= "0001111000"; -- Reg(0) = Mem(15)	; Ahora Reg(0) valdrá 5
-		--	RAM(1)  <= "0100000101"; -- Reg(0) += Reg(5)	; Ahora Reg(0) valdrá 10 (5+5)
-		--	RAM(2)  <= "0110000111"; -- Reg(0) -= Reg(7)	; Ahora Reg(0) valdrá 3	(10-7)	
-		--	RAM(3)  <= "1000001011"; -- Reg(0)++			; Ahora Reg(0) valdrá 4
-		--	RAM(4)  <= "1010001110"; -- REG(0)--			; Ahora Reg(0) valdrá 3 
-		--	RAM(5)  <= "0011011000"; -- Carga en Mem(11) el valor contenido en Reg(0) (En este caso 3). 
-		--	RAM(6)  <= "0001101001"; -- Carga en Reg(1) el valor contenido en Mem(11) (En este caso 3).
-		--	RAM(7)  <= "0110000001"; -- Reg(0) -= Reg(1)	; Ahora Reg(0) valdrá 0 y FZ = 1
+		--	RAM(1)  <= "0100000101"; -- Reg(5) += Reg(0)	; Ahora Reg(0) valdrá 10 (5+5)
+		--	RAM(2)  <= "0110101111"; -- Reg(5) -= Reg(7)	; Ahora Reg(0) valdrá 3	(10-7)	
+		--	RAM(3)  <= "1000001101"; -- Reg(5)++			; Ahora Reg(0) valdrá 4
+		--	RAM(4)  <= "1010001101"; -- REG(5)--			; Ahora Reg(0) valdrá 3 
+		--	RAM(5)  <= "0011011101"; -- Carga en Mem(11) el valor contenido en Reg(0) (En este caso 3). 
+		--	RAM(6)  <= "0001011001"; -- Carga en Reg(1) el valor contenido en Mem(11) (En este caso 3).
+		--	RAM(7)  <= "0110101001"; -- Reg(1) -= Reg(5)	; Ahora Reg(1) valdrá 0 y FZ = 1
 		--	RAM(8)  <= "1100000000"; -- Si FZ = 1, el valor del PC pasará a ser el 0
 		--	RAM(9)  <= "1111111111"; -- Sin utilidad
 		--	RAM(10) <= "1111111111"; -- Sin utilidad

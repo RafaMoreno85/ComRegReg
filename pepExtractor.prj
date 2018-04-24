@@ -1,1 +1,6 @@
-work	"Banco_Registros_8x4.vhd"
+work	"CLK_1KHz.vhd"
+work	"Disp7Seg.vhd"
+work	"Display7Seg_4ON.vhd"
+work	"Mux4_4bits.vhd"
+work	"RisingEdge.vhd"
+work	"YourTurn.vhd"
