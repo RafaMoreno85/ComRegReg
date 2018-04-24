@@ -7,16 +7,22 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Data_Path - Structural H:|Examen TDC|CompRegReg|Data_Path.vhd</ClosedNode>
+         <ClosedNode>/Debounce - Structural H:|Examen TDC|CompRegReg|Debounce.vhd</ClosedNode>
+         <ClosedNode>/Display7Seg_4ON - Structural H:|Examen TDC|CompRegReg|Display7Seg_4ON.vhd</ClosedNode>
          <ClosedNode>/Display7Seg_4ON - Structural H:|Examen TDC|CompRegReg|Display7Seg_4ON.vhd/Inst_YourTurn - YourTurn - Structural</ClosedNode>
+         <ClosedNode>/TOP - Structural H:|Examen TDC|CompRegReg|TOP.vhd/Inst_Data_Path - Data_Path - Structural</ClosedNode>
+         <ClosedNode>/TOP - Structural H:|Examen TDC|CompRegReg|TOP.vhd/Inst_Debounce - Debounce - Structural</ClosedNode>
+         <ClosedNode>/TOP - Structural H:|Examen TDC|CompRegReg|TOP.vhd/Inst_Display7Seg_4ON - Display7Seg_4ON - Structural</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Data_Path - Structural (H:/Examen TDC/CompRegReg/Data_Path.vhd)</SelectedItem>
+         <SelectedItem>TOP - Structural (H:/Examen TDC/CompRegReg/TOP.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021d0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ef000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ef0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Data_Path - Structural (H:/Examen TDC/CompRegReg/Data_Path.vhd)</CurrentItem>
+      <CurrentItem>TOP - Structural (H:/Examen TDC/CompRegReg/TOP.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -64,14 +70,57 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem>View RTL Schematic</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Control_unit_tb - behavior H:|Examen TDC|CompRegReg|Control_unit_tb.vhd</ClosedNode>
+         <ClosedNode>/Data_Path - Structural H:|Examen TDC|CompRegReg|Data_Path.vhd</ClosedNode>
+         <ClosedNode>/Display7Seg_4ON - Structural H:|Examen TDC|CompRegReg|Display7Seg_4ON.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Control_unit_tb - behavior (H:/Examen TDC/CompRegReg/Control_unit_tb.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015c0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Control_unit_tb - behavior (H:/Examen TDC/CompRegReg/Control_unit_tb.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>
