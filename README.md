@@ -22,6 +22,10 @@ Creation of a computer with the following caracteristics:
 – ST 001
 – ADD 010 – SUB 011 – INC 100 – DEC 101 – BeQ 110
 
-• Instruction lenght: 10 bits. • Instruction format:
+• Instruction lenght: 10 bits. 
+
+• Instruction format:
+
 – 1o Field: Operation code (3bits).
-– 2o Field: Memory address (4bits) / Inmediate (4bits) / Register1 address (3bits). – 3o Field: Register2 address.
+– 2o Field: Memory address (4bits) / Inmediate (4bits) / Register1 address (3bits).
+– 3o Field: Register2 address.
