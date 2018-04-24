@@ -1,0 +1,51 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to H:/Examen TDC/CompRegReg/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to H:/Examen TDC/CompRegReg/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Mux2_4bits.vhd" in Library work.
+Architecture behavioral of Entity mux2_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/RAM_16x10.vhd" in Library work.
+Architecture behavioral of Entity ram_16x10 is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Reg_10bits.vhd" in Library work.
+Architecture behavioral of Entity reg_10bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Inc1_3bits.vhd" in Library work.
+Architecture behavioral of Entity inc1_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Reg_4bits.vhd" in Library work.
+Architecture behavioral of Entity reg_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/ALU_4bits.vhd" in Library work.
+Architecture behavioral of Entity alu_4bits is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/FFD_FZ.vhd" in Library work.
+Architecture behavioral of Entity ffd_basic is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Banco_Registros_8x4.vhd" in Library work.
+Architecture behavioral of Entity banco_registros_8x4 is up to date.
+Compiling vhdl file "H:/Examen TDC/CompRegReg/Data_Path.vhd" in Library work.
+Entity <data_path> compiled.
+Entity <data_path> (Architecture <structural>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+
+Total memory usage is 210816 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

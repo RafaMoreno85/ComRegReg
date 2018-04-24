@@ -37,9 +37,16 @@ end Inc1_4bits;
 architecture Behavioral of Inc1_4bits is
 
 begin
+incremento: process(Value)
+begin
 	-- Hacemos cast con Value de std_logic_vector a unsigned para poder utilizar el operador + y asi incrementarlo 1.
 	-- Al resultado le hacemos un casting a std_logic_vector para poder asignar el resultado a Value_Inc que es de tipo std_logic_vector
-	Value_Inc <= std_logic_vector(unsigned(Value) + 1);
+	if(Value = "1010") then
+		Value_inc <= "0000";
+	else
+		Value_Inc <= std_logic_vector(unsigned(Value) + 1);
+	end if;
+end process incremento;	
 
 end Behavioral;
 

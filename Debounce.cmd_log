@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Timer300ms.vhd -lib work DeBounceFSM.vhd -lib work Debounce.vhd -prj CompRegReg -o Debounce.spl -module Debounce -template H:/TDC/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Debounce.spl {H:/Examen TDC/CompRegReg/Debounce.sym} 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Debounce.vhi" -module Debounce -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Timer300ms.vhd -lib work DeBounceFSM.vhd -lib work Debounce.vhd 

@@ -31,58 +31,50 @@ use IEEE.STD_LOGIC_1164.ALL;
  
 entity Data_Path is
 	Port (
-				CW0: 		in  std_logic;
-				CW1: 		in  std_logic;
-				CW2: 		in  std_logic;
-				CW3: 		in  std_logic;
-				CW4: 		in  std_logic;
-				CW5: 		in  std_logic;
-				CW6: 		in  std_logic;
-				CW7: 		in  std_logic;
-				CW8: 		in  std_logic;
-				Reset:	in	 std_logic;
-				Clk:		in  std_logic;
-				salFZ:	out std_logic;
-				salAlu:	out std_logic_vector(3 downto 0);
+				CW0: 				in  std_logic;
+				CW1: 				in  std_logic;
+				CW2: 				in  std_logic;
+				CW3: 				in  std_logic;
+				CW4: 				in  std_logic;
+				CW5: 				in  std_logic;
+				CW6: 				in  std_logic;
+				CW7: 				in  std_logic;
+				CW8: 				in  std_logic;
+				Selec_ALU: 		in  std_logic_vector(2 downto 0);
+				Reset:			in	 std_logic;
+				Clk:				in  std_logic;
+				salFZ:			out std_logic;
+				salAlu:			out std_logic_vector(3 downto 0);
 				sal_opeA:		out std_logic_vector(3 downto 0);
 				sal_opeB:		out std_logic_vector(3 downto 0);
-				BusRam:	out std_logic_vector(3 downto 0)
+				BusRam:			out std_logic_vector(3 downto 0);
+				instruccion:	out std_logic_vector(9 downto 0)
 				);
 end Data_Path;
 
 architecture Structural of Data_Path is
-signal opA, opB, resAlu,mux3_alu,mux4_bReg: 								std_logic_vector(3 downto 0);
-signal mem_regInst, sal_regInst, bReg_mem:													std_logic_vector(9 downto 0);
-signal signal_salFZ, FFD_salFZ, control_PC:													std_logic;	
-signal pc_inc_mux2, inc_mux1, mux1_pc,mux2_mem:							 					std_logic_vector(3 downto 0);
+signal opA, opB, resAlu,mux3_alu,mux4_bReg: 					std_logic_vector(3 downto 0);
+signal mem_regInst, sal_regInst, bReg_mem:					std_logic_vector(9 downto 0);
+signal signal_salFZ, FFD_salFZ, control_PC:					std_logic;	
+signal pc_inc_mux2, inc_mux1, mux1_pc,mux2_mem:				std_logic_vector(3 downto 0);
 
 COMPONENT Mux2_4bits
 	PORT(
-		A 				: IN std_logic_vector(3 downto 0);
-		B 				: IN std_logic_vector(3 downto 0);
-		Sel 			: IN std_logic;          
-		Z 				: OUT std_logic_vector(3 downto 0)
-		);
-END COMPONENT;
-
-COMPONENT Mux3_4bits
-	PORT(
-		A 				: IN std_logic_vector(3 downto 0);
-		B 				: IN std_logic_vector(3 downto 0);
-		C				: IN std_logic_vector(3 downto 0);
-		Sel 			: IN std_logic_vector(1 downto 0);          
-		Z 				: OUT std_logic_vector(3 downto 0)
+		A 						: IN std_logic_vector(3 downto 0);
+		B 						: IN std_logic_vector(3 downto 0);
+		Sel 					: IN std_logic;          
+		Z 						: OUT std_logic_vector(3 downto 0)
 		);
 END COMPONENT;
 
 COMPONENT RAM_16x10
 	PORT(
-		Reset : IN std_logic;
-		DataIn : IN std_logic_vector(9 downto 0);
-		Address : IN std_logic_vector(3 downto 0);
-		WE : IN std_logic;
-		Clk : IN std_logic;          
-		DataOut : OUT std_logic_vector(9 downto 0)
+		Reset 				: IN std_logic;
+		DataIn 				: IN std_logic_vector(9 downto 0);
+		Address 				: IN std_logic_vector(3 downto 0);
+		WE 					: IN std_logic;
+		Clk 					: IN std_logic;          
+		DataOut				: OUT std_logic_vector(9 downto 0)
 		);
 	END COMPONENT;
 
@@ -215,10 +207,12 @@ begin
 	Inst_ALU_4bits: ALU_4bits PORT MAP(
 		OPE_A => mux3_alu,
 		OPE_B => opB,
-		SEL_ALU => sal_regInst(9 downto 7) ,
+		SEL_ALU => Selec_ALU ,
 		SalALU => resAlu,
 		SalZF => signal_salFZ
 	);
+	
+	instruccion <= sal_regInst;
 		
 	Inst_FFD_Basic: FFD_Basic PORT MAP(
 		D => signal_salFZ,

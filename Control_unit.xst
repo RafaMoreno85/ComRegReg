@@ -1,5 +1,5 @@
 set -tmpdir "H:/Examen TDC/CompRegReg/xst/projnav.tmp"
 set -xsthdpdir "H:/Examen TDC/CompRegReg/xst"
 elaborate
--ifn Data_Path.prj
+-ifn Control_unit.prj
 -ifmt mixed

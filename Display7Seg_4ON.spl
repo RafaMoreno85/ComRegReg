@@ -1,0 +1,11 @@
+[Inputs]
+CLK
+RESET
+=Dato1[3:0]=
+=Dato2[3:0]=
+=Dato3[3:0]=
+=Dato4[3:0]=
+[Outputs]
+=Anodo[3:0]=
+=Catodo[6:0]=
+[BiDir]

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "H:/Examen TDC/CompRegReg/Control_unit_tb_isim_beh.exe" -prj "H:/Examen TDC/CompRegReg/Control_unit_tb_beh.prj" "work.Control_unit_tb" 

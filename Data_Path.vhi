@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file Data_Path.vhd -- 18:18:12 01/16/2016
+-- VHDL Instantiation Created from source file Data_Path.vhd -- 13:48:53 01/22/2016
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -17,12 +17,14 @@
 		CW6 : IN std_logic;
 		CW7 : IN std_logic;
 		CW8 : IN std_logic;
+		Selec_ALU : IN std_logic_vector(2 downto 0);
 		Reset : IN std_logic;
 		Clk : IN std_logic;          
 		salFZ : OUT std_logic;
 		salAlu : OUT std_logic_vector(3 downto 0);
-		opeA : OUT std_logic_vector(3 downto 0);
-		opeB : OUT std_logic_vector(3 downto 0)
+		sal_opeA : OUT std_logic_vector(3 downto 0);
+		sal_opeB : OUT std_logic_vector(3 downto 0);
+		BusRam : OUT std_logic_vector(3 downto 0)
 		);
 	END COMPONENT;
 
@@ -36,12 +38,14 @@
 		CW6 => ,
 		CW7 => ,
 		CW8 => ,
+		Selec_ALU => ,
 		Reset => ,
 		Clk => ,
 		salFZ => ,
 		salAlu => ,
-		opeA => ,
-		opeB => 
+		sal_opeA => ,
+		sal_opeB => ,
+		BusRam => 
 	);
 
 

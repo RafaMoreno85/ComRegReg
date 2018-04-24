@@ -1,0 +1,8 @@
+[Inputs]
+CLK
+Push
+RESET
+=OpCode[2:0]=
+[Outputs]
+=ControlWord[11:0]=
+[BiDir]

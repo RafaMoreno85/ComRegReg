@@ -1,0 +1,7 @@
+[Inputs]
+Push
+CLK
+RESET
+[Outputs]
+FilteredPush
+[BiDir]
