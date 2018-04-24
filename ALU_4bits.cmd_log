@@ -1,0 +1,1 @@
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/ALU_4bits.vhi" -module ALU_4bits -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ALU_4bits.vhd 

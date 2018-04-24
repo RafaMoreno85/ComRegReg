@@ -1,0 +1,3 @@
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Mux2_4bits.vhi" -module Mux2_4bits -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Mux2_4bits.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Mux2_4bits.vhi" -module Mux2_4bits -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Mux2_4bits.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Mux2_4bits.vhi" -module Mux2_4bits -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Mux2_4bits.vhd 

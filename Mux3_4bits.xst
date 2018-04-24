@@ -1,0 +1,5 @@
+set -tmpdir "H:/Examen TDC/CompRegReg/xst/projnav.tmp"
+set -xsthdpdir "H:/Examen TDC/CompRegReg/xst"
+elaborate
+-ifn Mux3_4bits.prj
+-ifmt mixed

@@ -1,0 +1,1 @@
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/RAM_16x10.vhi" -module RAM_16x10 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RAM_16x4.vhd 

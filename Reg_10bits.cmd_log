@@ -1,0 +1,1 @@
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Reg_10bits.vhi" -module Reg_10bits -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Reg_10bits.vhd 

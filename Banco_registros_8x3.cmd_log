@@ -1,0 +1,6 @@
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Banco_registros_8x3.vhi" -module Banco_registros_8x3 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Banco_registros_8x3.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Banco_registros_8x3.vhi" -module Banco_registros_8x3 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Banco_registros_8x3.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Banco_registros_8x3.vhi" -module Banco_registros_8x3 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Banco_registros_8x3.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Banco_registros_8x3.vhi" -module Banco_registros_8x3 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Banco_registros_8x3.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Banco_registros_8x3.vhi" -module Banco_registros_8x3 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Banco_registros_8x3.vhd 
+vhdtdtfi -prj CompRegReg -o "H:/Examen TDC/CompRegReg/Banco_registros_8x3.vhi" -module Banco_registros_8x3 -template H:/TDC/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Banco_registros_8x3.vhd 
